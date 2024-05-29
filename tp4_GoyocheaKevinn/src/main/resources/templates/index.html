@@ -1,15 +1,85 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es">
-	<head>
-		<meta charset="ISO-8859-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Inicio</title>
-		<link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"></link>	
-	</head>
-	
-	<body>
-		<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Nacional de Jujuy</title>
+    <link th:rel="stylesheet" th:href="@{@{/webjars/bootstrap/css/.bootstrap.min.css}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3" style="background-image: linear-gradient(to bottom, white 54% , #59B5D9);">
+    	<div class="container">
+        	<p><img class="logo" alt="imagen defectuosa" src="../static/images/R.png" style="width: 150px;"></p>
+        	<h1>Facultad de Economia</h1>
+        	<p class="lead">"Compromiso con la Educion"</p>
+    	</div>
+	</header>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Facultad</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Carreras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Barra Lateral -->
+            <aside class="col-md-3 bg-light p-3">
+                <h4>Enlaces Útiles</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#">Biblioteca</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Calendario Académico</a></li>
+                </ul>
+            </aside>
 
-	</body>
+            <!-- Contenido Principal -->
+            <main class="col-md-9 p-3">
+                <h2>Bienvenidos a la Facultad de Economia</h2>
+                <p>La Facultad de Economia de la Universidad Nacional de Jujuy se dedica a formar profesionales comprometidos con la excelencia y etica académica.</p>
+                
+                <h3>Noticias Recientes</h3>
+                <ul>
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Listado de ingresantes</a></li>
+                    <li><a href="#">Calendario academico</a></li>
+                </ul>
+            </main>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>Dirección: La Madrid, San Salvador de Jujuy - Argentina</p>
+            <p>Teléfono: +543884128242</p>
+            <p>Correo Electrónico: info@unju.edu.ar</p>
+            <div>
+                <!-- Redes Sociales -->
+                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mt-2">&copy; 2024 Facultad de economia, Universidad Nacional de Jujuy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}" ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
